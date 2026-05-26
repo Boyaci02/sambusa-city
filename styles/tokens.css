@@ -1,0 +1,72 @@
+/* ─────────────────────────────────────────────────────────────
+   Sambusa City — design tokens
+   Authoritative: DESIGN.md.  This file mirrors those values as
+   CSS custom properties.
+   ───────────────────────────────────────────────────────────── */
+
+:root {
+  /* ── Palette · analogous warm-earth · 60-30-10 ───────────── */
+  --cream:        #F4ECD9;   /* 60% dominant */
+  --cream-2:      #EBE0C5;   /* striping + cards */
+  --coffee:       #1F140C;   /* 30% secondary */
+  --coffee-soft:  #3B2A1F;   /* secondary text on cream */
+  --saffron:      #D49A26;   /* 10% accent on dark */
+  --saffron-deep: #A87515;   /* accent on cream (WCAG-safe) */
+  --clay:         #9B4A2B;   /* tertiary / hover deepen */
+
+  --line:         rgba(31, 20, 12, 0.12);
+  --line-strong:  rgba(31, 20, 12, 0.22);
+  --line-dark:    rgba(244, 236, 217, 0.14);
+
+  /* ── Typography ─────────────────────────────────────────── */
+  --font-display: 'Newsreader', Georgia, 'Times New Roman', serif;
+  --font-body:    'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* 1.25 modular scale from 16px base */
+  --fs-xs:   12px;
+  --fs-sm:   14px;
+  --fs-base: 16px;
+  --fs-md:   20px;
+  --fs-lg:   25px;
+  --fs-xl:   31px;
+  --fs-2xl:  39px;
+  --fs-3xl:  49px;
+  --fs-4xl:  61px;
+  --fs-5xl:  76px;
+  --fs-6xl:  95px;
+
+  --lh-body:    1.55;
+  --lh-display: 1.05;
+  --lh-heading: 1.1;
+  --lh-h3:      1.2;
+
+  /* ── Fibonacci spacing (8px baseline) ───────────────────── */
+  --space-1:  8px;
+  --space-2:  13px;
+  --space-3:  21px;
+  --space-4:  34px;
+  --space-5:  55px;
+  --space-6:  89px;
+  --space-7:  144px;
+
+  /* ── Layout ─────────────────────────────────────────────── */
+  --max:    1280px;
+  --gutter: clamp(20px, 5vw, 80px);
+  --nav-h:  72px;
+
+  /* ── Motion ─────────────────────────────────────────────── */
+  --dur-micro:    150ms;
+  --dur-standard: 300ms;
+  --dur-large:    450ms;
+  --ease-out:     cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in:      cubic-bezier(0.4, 0, 1, 1);
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+}
+
+@media (max-width: 720px) {
+  :root {
+    --nav-h: 64px;
+  }
+}

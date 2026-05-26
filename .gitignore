@@ -1,0 +1,27 @@
+# Local-only working files — never push.
+# Source PNGs / abandoned files live here so they're kept locally but
+# don't bloat the deployed bundle.
+_unused/
+
+# OS / editor / file-manager noise
+.DS_Store
+Thumbs.db
+.comments/
+*.swp
+*~
+
+# Internal design context (references BRAIN paths)
+.impeccable.md
+BRIEF-FOR-IVAN.md
+DESIGN.md
+
+# QA screenshots — local-only
+temporary screenshots/
+
+# Old content drafts from the pre-repositioning era ("östafrikansk husmanskost")
+# Superseded by the live HTML — kept local for reference, not deployed.
+index.md
+meny.md
+om-oss.md
+kontakta-oss.md
+integritetspolicy.md

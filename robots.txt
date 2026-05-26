@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /integritetspolicy.html
+
+Sitemap: https://sambusacity.se/sitemap.xml
